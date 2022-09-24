@@ -64,14 +64,6 @@ function end(num1, num2, num3, name_win){
         document.getElementById('item' + num1).style.background = '#000';
         document.getElementById('item' + num2).style.background = '#000';
         document.getElementById('item' + num3).style.background = '#000';
-
-
-        setTimeout(function(){
-            for (let i = 1; i < 10; i++) {
-                // squares[i] = document.getElementById('item' + i).innerHTML = '';
-                squares[i] = document.getElementById('item' + i).style.background = '#f25';
-            }
-        }, 5000);
         
         localStorage.setItem('winner', name_win);
         generateWinner();
@@ -128,6 +120,11 @@ function ravenMatch(){
     localStorage.setItem('winner', '');
     for (let i = 1; i < 10; i++) {
         squares[i] = document.getElementById('item' + i).innerHTML = '';
-        // squares[i] = document.getElementById('item' + i).style.background = '#f25';
+        squares[i] = document.getElementById('item' + i).style.background = null;
     }
+}
+
+
+function reMatch(){
+    location.reload();
 }
