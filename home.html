@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>Game</title>
+</head>
+<body>
+    <div id="home" class="bg-dark gap-md-3">
+        <div>
+            <p class="gameName">Tic-Tac-Toe</p>
+        </div>
+        <div class="w-75 d-flex flex-wrap justify-content-around align-items-center">
+            <div class="col-md-6 col-10">
+                <h5 class="text-danger" id="error_names"></h5>
+                <div class="w-50 mb-3">
+                    <label for="" class="form-label text-light">Player 1</label>
+                    <input type="text" id="name_player1" class="form-control" id="player1" placeholder="Player 1">
+                </div>
+                <div class="w-50 mb-3">
+                    <label for="" class="form-label text-light">Player 2</label>
+                    <input type="text" id="name_player2" class="form-control" id="player2" placeholder="Player 2">
+                </div>
+                <button type="submit" id="btn" onclick="namePlayers()" class="btn btn-primary">Let's Play</button>
+            </div>
+            <div class="col-md-6 col-10 d-flex flex-column justify-content-center align-items-center">
+                <div class="img_game">
+                    <div class="title_home"><span>X O</span> GAME</div>
+                    <div class="square bg-dark">X</div>
+                    <div class="square">O</div>
+                    <div class="square">X</div>
+            
+                    <div class="square">O</div>
+                    <div class="square bg-dark">X</div>
+                    <div class="square"></div>
+            
+                    <div class="square">O</div>
+                    <div class="square">O</div>
+                    <div class="square bg-dark">X</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="play" class="bg-dark gap-md-3 py-3">
+        <div>
+            <p class="gameName">Tic-Tac-Toe</p>
+        </div>
+        <div class="players d-flex justify-content-center align-items-center gap-5">
+            <div class="names bg-light text-dark">
+                <h5 id="name1">player1</h5>
+                <h4 id="win1">0</h4>
+            </div>
+            <div class="names bg-light text-dark">
+                <h5 id="name2">player2</h5>
+                <h4 id="win2">0</h4>
+            </div>
+        </div>
+        <div class="game">
+            <div class="title"><span>X O</span> GAME</div>
+            <div class="square" id="item1" onclick="game(this.id)"></div>
+            <div class="square" id="item2" onclick="game(this.id)"></div>
+            <div class="square" id="item3" onclick="game(this.id)"></div>
+            <div class="square" id="item4" onclick="game(this.id)"></div>
+            <div class="square" id="item5" onclick="game(this.id)"></div>
+            <div class="square" id="item6" onclick="game(this.id)"></div>
+            <div class="square" id="item7" onclick="game(this.id)"></div>
+            <div class="square" id="item8"onclick="game(this.id)"></div>
+            <div class="square" id="item9" onclick="game(this.id)"></div>
+        </div>
+        <div type='button' id="ravencher" class="bg-light text-dark rounded p-2" onclick="ravenMatch()">Ravencher</div>
+    </div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <!-- <script src="main.js"></script> -->
+</body>
+</html>

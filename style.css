@@ -1,8 +1,18 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: rgb(32, 32, 32);
+    background-color: rgb(32, 32, 32) !important;
 }
+
+#home, #play{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .gameName{
     color: white;
     text-align: center;
@@ -16,10 +26,20 @@ body{
     color: white;
     margin: auto;
     font-weight: 500;
-    padding-top: 50px;
+}
+.names{
+    width: 100px;
+    border-radius: 10px;
+    text-align: center;
+}
+.players{
+    display: flex;
+    justify-content: space-evenly;
+    color: black;
+    font-size: 20px;
 }
 
-.title{
+.title_home{
     background: #f25;
     padding: 5px 0;
     margin: 5px 0;
@@ -42,4 +62,47 @@ span{
 .square:hover{
     background: #000;
     cursor: pointer;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.gameName{
+    color: white;
+    text-align: center;
+    font-family: 'Indie Flower', 'Comic Sans', cursive;
+    font-size: 2.8rem;
+}
+.img_game{
+    width: 255px;
+    text-align: center;
+    font-family: system-ui;
+    color: white;
+    font-weight: 500;
+}
+.title{
+    background: #f25;
+    padding: 5px 0;
+    margin: 5px 0;
+}
+span{
+    /* color: #fa0; */
+    color: black;
+    font-weight: bold;
+}
+strong{
+    color: white;
+    font-weight: bold;
+}
+.img_game .square{
+    width: 80px;
+    height: 80px;
+    background: #f25;
+    float: left;
+    margin: 2px;
+    font-size: 50px;
 }
